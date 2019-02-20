@@ -5,4 +5,4 @@ from flask_wtf.file import FileField, FileAllowed, FileRequired
 images = UploadSet('imgaes', IMAGES)
 
 class UploadForm(FlaskForm):
-    file_upload = FileField('image', validators=[FileRequired(), FileAllowed(images, 'Images only!')])
+    file_upload = FileField('Image', validators=[FileRequired(), FileAllowed(images, 'Images only!')])
